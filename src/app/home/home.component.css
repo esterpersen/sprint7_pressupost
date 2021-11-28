@@ -1,0 +1,7 @@
+app-panell, .form-check{
+    display: flex; justify-content: center
+}
+
+input{
+    margin-right: 10px;
+}

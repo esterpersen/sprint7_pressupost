@@ -1,0 +1,15 @@
+app-panell,
+.form-check,
+#preuTotal {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+input {
+  margin-right: 10px;
+}
+
+#preuTotal {
+  font-weight: bolder;
+}

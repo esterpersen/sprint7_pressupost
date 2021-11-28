@@ -1,0 +1,42 @@
+<div class="row p-3">
+  <div class="col">
+    <button
+      type="button"
+      class="btn btn-dark"
+      onclick="location.href='/welcome'"
+    >
+      Tornar a l'inici
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <form>
+      <div *ngFor="let product of allProducts" class="form-check">
+        <label class="form-check-label">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            [name]="product.pName"
+            [(ngModel)]="product.isChecked"
+            (change)="updateSelectedItemsList(product)"
+          />
+          {{ product.pName }} ({{
+            product.pPrice | currency: "EUR":"symbol"
+          }})</label
+        >
+      </div>
+      <app-panell
+        [product]="allProducts[0]"
+        *ngIf="allProducts[0].isChecked"
+        (updatedTotalWebCost)="updatedTotalWebCostHandler($event)"
+        (updatedTotalWebCostFromService)="updatedTotalWebCostHandler($event)"
+      ></app-panell>
+
+      <p id="preuTotal">
+        PREU TOTAL:
+        {{ bigTotal | currency: "EUR":"symbol" }}
+      </p>
+    </form>
+  </div>
+</div>

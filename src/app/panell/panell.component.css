@@ -1,0 +1,17 @@
+.selector {
+  display: inline-flex;
+  margin: 0.2rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#panellComp {
+  border: 3px solid black;
+  border-radius: 15px;
+  width: max-content;
+  padding: 10px;
+}
