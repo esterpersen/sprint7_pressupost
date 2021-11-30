@@ -1,0 +1,18 @@
+<ng-template #content1 let-modal>
+  <div class="modal-body">
+    <p>Aquí has d'indicar el nombre de pàgines que necessites per la teva pàgina web. </p>
+  </div>
+</ng-template>
+<ng-template #content2 let-modal>
+  <div class="modal-body">
+    <p>Aquí has d'indicar el nombre d'idiomes en que necessites la teva pàgina web.</p>
+  </div>
+</ng-template>
+
+<button id="modalNumPags" *ngIf="modalOption==1" class="btn btn-secondary mb-2 mr-2" (click)="openVerticallyCentered(content1)" >
+  <i class="bi bi-info-circle"></i> 
+</button>
+
+<button id="modalNumLangs" *ngIf="modalOption==2" class="btn btn-secondary mb-2 mr-2" (click)="openVerticallyCentered(content2)">
+  <i class="bi bi-info-circle"></i> 
+</button>

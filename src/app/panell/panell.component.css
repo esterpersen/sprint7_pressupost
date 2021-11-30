@@ -1,6 +1,8 @@
 .selector {
   display: inline-flex;
   margin: 0.2rem;
+  height: min-content;
+
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -14,4 +16,17 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 15px;
   width: max-content;
   padding: 10px;
+}
+
+app-modal,
+button {
+  margin-left: 5px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  height: min-content;
+}
+
+input{
+  height: 2.4rem;
+  margin-left: 5px;
 }

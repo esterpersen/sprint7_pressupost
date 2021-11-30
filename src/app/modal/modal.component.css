@@ -1,0 +1,9 @@
+ng-template {
+  background-color: #292b2c;
+  color: white;
+}
+*, button{
+  height: min-content;
+  margin-bottom: 0;
+}
+

@@ -6,7 +6,7 @@
       <button type="button" class="btn btn-danger" (click)="decrementar_pags()">-</button>
       <input type="number" (keydown)="calculateWebPrice()" formControlName="numPags">
       <button type="button" class="btn btn-success" (click)="incrementar_pags()">+</button>
-      <app-modal></app-modal>
+      <app-modal [modalOption]=1></app-modal>
     </div>
     <div *ngIf="webPageForm.controls['numPags'].errors?.required">És obligatori.</div>
     <div *ngIf="webPageForm.controls['numPags'].errors?.min">Insereix com a mínim 1 pàgina.</div>
@@ -17,7 +17,7 @@
       <button type="button" class="btn btn-danger" (click)="decrementar_idiomes()">-</button>
       <input type="number" (keydown)="calculateWebPrice()" formControlName="numIdiomes">
       <button type="button" class="btn btn-success"(click)="incrementar_idiomes()">+</button>
-      <app-modal></app-modal>
+      <app-modal [modalOption]=2></app-modal>
     </div>
     <div *ngIf="webPageForm.controls['numIdiomes'].errors?.required">És obligatori.</div>
     <div *ngIf="webPageForm.controls['numIdiomes'].errors?.min">Insereix com a mínim 1 idioma.</div>
